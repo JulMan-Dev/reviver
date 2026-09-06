@@ -11,19 +11,19 @@ graphs.
 The package is not published on npm yet, so you'll have to install it from GitHub:
 
 ```bash
-npm install @julman/reviver@github:JulMan-Dev/reviver
+npm install @julman_dev/reviver@github:JulMan-Dev/reviver
 # or
-yarn add @julman/reviver@github:JulMan-Dev/reviver
+yarn add @julman_dev/reviver@github:JulMan-Dev/reviver
 # or
-pnpm add @julman/reviver@github:JulMan-Dev/reviver
+pnpm add @julman_dev/reviver@github:JulMan-Dev/reviver
 # or
-bun add @julman/reviver@github:JulMan-Dev/reviver
+bun add @julman_dev/reviver@github:JulMan-Dev/reviver
 ```
 
 ## Usage
 
 ```ts
-import { Reviver } from "@julman/reviver";
+import { Reviver } from "@julman_dev/reviver";
 
 const reviver = new Reviver();
 
@@ -63,7 +63,7 @@ The final serialized format is abstracted behind an `IDataProvider`.
 - **BSON** (`BsonDataProvider`) — optional; requires installing the `bson` package separately.
 
 ```ts
-import { BsonDataProvider } from "@julman/reviver/lang/bson";
+import { BsonDataProvider } from "@julman_dev/reviver/lang/bson";
 
 const reviver = new Reviver([], new BsonDataProvider());
 ```
@@ -85,8 +85,8 @@ To use contexts:
 2. Wrap the value you're about to serialize with `ref.attach(value)` before passing it to `stringify`/`plainify`.
 
 ```ts
-import {Reviver, ContextsReviver, createAttachableRef} from "@julman/reviver";
-import {CircularContext, CircularWrapReviver} from "@julman/reviver/contexts/circulars";
+import {Reviver, ContextsReviver, createAttachableRef} from "@julman_def/reviver";
+import {CircularContext, CircularWrapReviver} from "@julman_dev/reviver/contexts/circulars";
 
 const ref = createAttachableRef();
 const reviver = new Reviver([
