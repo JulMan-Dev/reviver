@@ -8,16 +8,16 @@ graphs.
 
 ## Installation
 
-The package is not published on npm yet, so you'll have to install it from GitHub:
+You can install directly from npmjs:
 
 ```bash
-npm install @julman_dev/reviver@github:JulMan-Dev/reviver
+npm install @julman_dev/reviver
 # or
-yarn add @julman_dev/reviver@github:JulMan-Dev/reviver
+yarn add @julman_dev/reviver
 # or
-pnpm add @julman_dev/reviver@github:JulMan-Dev/reviver
+pnpm add @julman_dev/reviver
 # or
-bun add @julman_dev/reviver@github:JulMan-Dev/reviver
+bun add @julman_dev/reviver
 ```
 
 ## Usage
