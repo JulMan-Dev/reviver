@@ -17,5 +17,8 @@
     "ts-jest": "^29.2.5",
     "typescript": "^5.0.4"
   },
+  "repository": {
+    "url": "https://github.com/JulMan-Dev/reviver"
+  },
   "packageManager": "pnpm@12.3.4"
 }
