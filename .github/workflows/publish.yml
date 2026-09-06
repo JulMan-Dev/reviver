@@ -15,22 +15,22 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: pnpm/setup@v2
         with:
-          node-version: 22
-          registry-url: "https://registry.npmjs.org"
+          runtime: node@lts
+          cache: true
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Test
-        run: npm test
+        run: pnpm test
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Publish
-        run: npm publish --provenance
+        run: pnpm publish --provenance
